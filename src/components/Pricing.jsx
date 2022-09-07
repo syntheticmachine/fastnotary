@@ -5,64 +5,46 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logomark } from '@/components/Logo'
+import Link from 'next/link'
 
 const plans = [
   {
-    name: 'Starter',
+    name: '6 Hour - Become A Notary',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: 'Only $29', Annually: '$0' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae ab aspernatur iure nisi modi dicta expedita sed esse corrupti aperiam inventore eveniet officiis ipsum voluptatum, maiores tempora incidunt molestiae! Nostrum.',
     button: {
-      label: 'Get started for free',
+      label: 'Start Your Course',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Money-Back Guarantee To Pass State Exam',
+      'Self Paced Course',
+      'Instant Proof of Completion',
+      'State Licensed #605172',
+      'Best For New Notaries'
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: '3 Hour - Notary Renewal',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: 'Only $19', Annually: '$70' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae ab aspernatur iure nisi modi dicta expedita sed esse corrupti aperiam inventore eveniet officiis ipsum voluptatum, maiores tempora incidunt molestiae! Nostrum.',
     button: {
-      label: 'Subscribe',
+      label: 'Start Your Course',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'Money-Back Guarantee To Pass State Exam',
+      'Self Paced Course',
+      'Instant Proof of Completion',
+      'State Licensed #605172',
+      'Best For New Notaries'
     ],
     logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
-    featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
-    description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
-    ],
-    logomarkClassName: 'fill-cyan-500',
   },
 ]
 
@@ -100,23 +82,22 @@ function Plan({
   return (
     <section
       className={clsx(
-        'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
+        'flex flex-col overflow-hidden rounded-3xl p-8 shadow-lg shadow-gray-900/5',
         featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white'
       )}
     >
       <h3
         className={clsx(
-          'flex items-center text-sm font-semibold',
+          'flex items-center text-sm font-semibold pb-3 border-b border-gray-100 mb-2',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
-        <span className="ml-4">{name}</span>
+        <span className="font-semibold text-3xl">{name}</span>
       </h3>
       <p
         className={clsx(
-          'relative mt-5 flex text-3xl tracking-tight',
-          featured ? 'text-white' : 'text-gray-900'
+          'relative mt-2 mb-4 flex text-2xl tracking-tight italic text-primary',
+          featured ? 'text-white' : 'text-gray-600'
         )}
       >
         {price.Monthly === price.Annually ? (
@@ -169,7 +150,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500'
+                  featured ? 'text-white' : 'text-yellow-400'
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -177,14 +158,13 @@ function Plan({
           ))}
         </ul>
       </div>
-      <Button
-        href={button.href}
-        color={featured ? 'cyan' : 'gray'}
-        className="mt-6"
+      <Link
+        href="/start"
+        className="mt-6 mb-6 bg-white hover:bg-yellow-400 duration-300 text-primary font-semibold px-4 py-3 border-2 border-black text-center rounded-full"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         {button.label}
-      </Button>
+      </Link>
     </section>
   )
 }
@@ -196,44 +176,24 @@ export function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-gray-100 py-20 sm:py-32"
+      className="border-t border-gray-200 bg-gray-100 py-20 mx-auto max-w-6xl"
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-4xl font-semibold tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            Flat pricing, no hidden fees.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis hic fuga accusamus rem error beatae architecto pariatur suscipit velit eveniet.
           </p>
         </div>
 
-        <div className="mt-8 flex justify-center">
+        <div className=" flex justify-center">
           <div className="relative">
-            <RadioGroup
-              value={activePeriod}
-              onChange={setActivePeriod}
-              className="grid grid-cols-2"
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <RadioGroup.Option
-                  key={period}
-                  value={period}
-                  className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                    period === 'Monthly'
-                      ? 'rounded-l-lg'
-                      : '-ml-px rounded-r-lg'
-                  )}
-                >
-                  {period}
-                </RadioGroup.Option>
-              ))}
-            </RadioGroup>
+
             <div
               aria-hidden="true"
               className={clsx(
@@ -258,7 +218,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-2">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}

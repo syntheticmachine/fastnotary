@@ -5,53 +5,58 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'I starred my course, how do I log back in?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'To log back into your course please click this link: https://becomeacalifornianotary.com/school/?view=login and you will be redirected to our login page. You can access your course with either your username (which was provided by us and looks like smith7827567165 ) or with the email address you signed up with.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'After completing our Online Notary Council Course, how do I register for and take the California State Exam?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'You may go to the CPS HR Website (https://exam-registration.cpshr.us/notary/notary)  for exam dates and testing sites nearest you.  You may register for a notary public exam either online or by phone up to 15 business days prior to the exam.  To register by phone, please contact CPS at (916) 263-3520, M-F, 8 am – 5 pm. A confirmation scheduling letter will be sent to you via email or USPS, depending on how you registered. Also at the website, you may print the Notary Public Application (or have mailed to you if you registered by phone), which you will need to complete and bring with you to the testing site.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'When is the Next State Exam?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'You can find the next State Exam in your area here: https://exam-registration.cpshr.us/notary/notary',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Where are the State Exams?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'State exams are all up and down California, to find the next one in your area click here',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'I purchased your course via Groupon, how do I activate it?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'To activate your course please first section the appropriate course and add it to your cart. During checkout process enter your Groupon Code in the Promo Code box and your shopping cart balance will be set to $0. At this time please finish the signup process.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'How do I prove I have completed your online course?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Once you have successfully completed our online state accepted notary course, you will be given a certificate of completion. You will need to print this certificate and take it with you to your Notary Public Exam.',
+    },
+  ],
+  [
+    {
+      question: 'I have misplaced my completion certificate?',
+      answer:
+        'Don’t worry, you can always log back into your account on our site and reprint your certificate of completion letter.',
+    },
+    {
+      question: 'How much does the Notary Public Exam cost?',
+      answer:
+        'You will need to bring a $40.00 separate check or money order, payable to the Secretary of State,  to the testing site for ALL new applicants. You will need to bring a $20.00 separate check or money order, payable to the Secretary of State, to the testing site for applicants that have previously taken the exam and failed.',
+    },
+    {
+      question: 'I though Everyone Had to Go Through NNA?',
+      answer:
+        'No, everyone does not need to go through NNA (Nation Notary Association) as both our courses are approved by the Secretary of State for the training courses.',
+    },
+    {
+      question: 'I though Everyone Had to Go Through NNA?',
+      answer:
+        'No, everyone does not need to go through NNA (Nation Notary Association) as both our courses are approved by the Secretary of State for the training courses.',
     },
   ],
 ]
@@ -61,13 +66,13 @@ export function Faqs() {
     <section
       id="faqs"
       aria-labelledby="faqs-title"
-      className="border-t border-gray-200 py-20 sm:py-32"
+      className="border-t border-gray-200 py-20 bg-white"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faqs-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-4xl font-semibold tracking-tight text-gray-900"
           >
             Frequently asked questions
           </h2>

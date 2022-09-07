@@ -14,22 +14,28 @@
   font-named-instance: 'Italic';
   src: url('/fonts/Inter-italic.var.woff2') format('woff2');
 }
+
+/* 
 @font-face {
-  font-family: 'Scripty';
+  font-family: 'scripty';
+  font-weight: 100 900;
+  font-display: block;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Fraunces-roman.var.woff2') format('woff2');
+  src: url('/fonts/Fraunces-roman.var.woff') format('woff');
+}
+@font-face {
+  font-family: 'scripty_itc';
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url('/fonts/Fraunces-italic.var.ttf') format('ttf');
+  src: url('/fonts/Fraunces-italic.var.woff2') format('woff2');
+  src: url('/fonts/Fraunces-italic.var.woff') format('woff');
 }
-@font-face {
-  font-family: 'Scripty';
-  font-weight: 100 900;
-  font-display: block;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/Fraunces-italic.var.ttf') format('ttf');
-}
+*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&display=swap');
 
 @tailwind base;
 @tailwind components;

@@ -88,7 +88,7 @@ function Plan({
     >
       <h3
         className={clsx(
-          'flex items-center text-sm font-semibold pb-3 border-b border-gray-100 mb-2',
+          'flex items-center text-sm font-semibold pb-3 mb-2 relative underlined-three',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Inter-roman.var.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Inter-italic.var.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Scripty';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Fraunces-italic.var.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Scripty';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Fraunces-italic.var.ttf') format('ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  background-color: #F9F3EE;
+}
+html, body {
+  background-color: #F9F3EE !important;
+}
+.bg-main {
+  background-color: #fffcfa;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+
+h1, h2, h3, h4, h5, .text-primary {
+  font-family: 'Fraunces', serif;
+}
+.underlined {
+  position: relative;
+}
+.underlined::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  background-image: url(../images/underline.svg);
+  height: 20px;
+  bottom: -16px;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.underlined-three {
+  z-index: 1;
+}
+.underlined-three::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  background-image: url(/_next/static/media/underline.7eace72b.svg);
+  height: 20px;
+  bottom: -16px;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: contain;
+}
+.underlined-two::after {
+  content: '';
+  width: 160%;
+  position: absolute;
+  background-image: url(/_next/static/media/underline.7eace72b.svg);
+  height: 20px;
+  bottom: -16px;
+  left: -30%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  right: 0;
+  margin: 0 auto;
+  background-size: contain;
+}
+
+.hero-image {
+  height: 550px;
+  width: 425px;
+}

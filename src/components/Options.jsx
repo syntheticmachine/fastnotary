@@ -1,6 +1,7 @@
 import { useId } from 'react'
 
 import { Container } from '@/components/Container'
+import Link from 'next/link'
 
 const features = [
   {
@@ -187,11 +188,13 @@ export function Options() {
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8 bg-white hover:cursor-pointer hover:bg-gray-50 duration-300"
             >
+            <Link href="/">
               <feature.icon className="h-8 w-8" />
               <h3 className="mt-6 font-semibold text-gray-900 text-2xl">
                 {feature.name}
               </h3>
               <p className="mt-2 text-gray-700 text-sm">{feature.description}</p>
+              </Link>
             </li>
           ))}
         </ul>

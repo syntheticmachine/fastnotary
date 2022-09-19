@@ -25,7 +25,7 @@ export default function Home() {
 
       <style jsx global>{`
         h1, h2, h3, h4, h5, .text-primary {
-          font-family: 'Fraunces', serif;
+          font-family: 'Fraunces', serif !important;
         }
       `}</style>
 

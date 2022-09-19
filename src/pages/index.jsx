@@ -22,6 +22,14 @@ export default function Home() {
           content="Add Description Here..."
         />
       </Head>
+
+      <style jsx global>{`
+        h1, h2, h3, h4, h5, .text-primary {
+          font-family: 'Fraunces', serif;
+        }
+      `}</style>
+
+      
       <Header />
       <main>
         <Hero />

@@ -50,8 +50,8 @@ export function Header() {
   return (
     <header className="bg-white bg-opacity-70 sticky top-0 z-20 backdrop-blur-lg">
       <nav>
-        <Container className="relative z-50 flex px-8 md:px-0 py-4 md:py-8">
-          <div className="relative z-10 flex items-center justify-between w-full gap-16">
+        <Container className="relative z-50 flex px-4 md:px-0 py-4 md:py-8">
+          <div className="relative z-10 flex items-center justify-between w-full gap-6 md:gap-16">
             <Link href="/" aria-label="Home">
               <Image src={MainLogo} alt="" className="h-10 md:h-14 w-auto" unoptimized />
             </Link>
@@ -61,9 +61,9 @@ export function Header() {
 
             <div className="flex items-center gap-6 lg:hidden">
 
-            <div className="md:hidden w-auto ml-auto text-right">
+            <div className="md:hidden w-32 ml-auto text-right">
               <Link href="/start" className="lg:block inline-flex justify-center rounded-full border py-2 px-4 text-sm border-2 border-black bg-white text-primary font-semibold hover:bg-yellow-400 duration-300">
-                Get Started
+                Sign Up
               </Link>
             </div>
 
@@ -106,7 +106,7 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="mb-6 pb-6 text-center w-full border-b border-gray-200">
-                            <Image src={MainLogo} alt="" className="h-10 mx-auto" unoptimized />
+                            <Image src={MainLogo} alt="" className="h-12 mx-auto" unoptimized />
                           </div>
                           <div className="space-y-4 grid">
                            <NavLinks />

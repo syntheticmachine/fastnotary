@@ -350,7 +350,7 @@ export function Hero() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-gray-900">
             The <span className="underlined-two relative italic">fastest</span> way to become a notary.
             </h1>
-            <p className="mt-6 text-lg text-gray-600 pr-24">
+            <p className="mt-6 text-lg text-gray-600 lg:pr-24">
               With our easy online course, you’re <span className="font-bold text-gray-700 italic">guaranteed</span> to pass in the fastest time that is allowed by law.
             </p>
             <div className="mt-8 w-auto inline-grid gap-4">

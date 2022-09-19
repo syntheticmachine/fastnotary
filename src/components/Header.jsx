@@ -50,7 +50,7 @@ export function Header() {
   return (
     <header className="bg-white bg-opacity-70 sticky top-0 z-20 backdrop-blur-lg">
       <nav>
-        <Container className="relative z-50 flex py-4 md:py-8">
+        <Container className="relative z-50 flex px-8 md:px-0 py-4 md:py-8">
           <div className="relative z-10 flex items-center justify-between w-full gap-16">
             <Link href="/" aria-label="Home">
               <Image src={MainLogo} alt="" className="h-10 md:h-14 w-auto" unoptimized />
@@ -60,11 +60,18 @@ export function Header() {
             </div>
 
             <div className="flex items-center gap-6 lg:hidden">
+
+            <div className="md:hidden w-auto ml-auto text-right">
+              <Link href="/start" className="lg:block inline-flex justify-center rounded-full border py-2 px-4 text-sm border-2 border-black bg-white text-primary font-semibold hover:bg-yellow-400 duration-300">
+                Get Started
+              </Link>
+            </div>
+
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-full stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none bg-gray-100"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
@@ -118,7 +125,7 @@ export function Header() {
               )}
             </Popover>
           </div>
-          <div className="flex gap-2 items-center">
+          <div className="hidden md:flex gap-2 items-center">
             <a href="/school/?view=login" className="hidden lg:block inline-flex justify-center rounded-full border-none bg-opacity-0 py-2 px-2 text-sm text-primary font-semibold">
               Login
             </a>

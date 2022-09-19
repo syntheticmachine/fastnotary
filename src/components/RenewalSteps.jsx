@@ -24,7 +24,7 @@ export default function RenewalSteps() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900">
-            Steps To Renew Your <span className="underlined-three relative">Notary Public Commission.</span>
+            Steps to renew your <span className="underlined-three relative">Notary Public Commission.</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               In just three fast and easy steps you can renew your notary license.

@@ -9,7 +9,7 @@ export function NavLinks() {
     ['Become A Notary', '/become-a-notary'],
     ['Notary Renewal', '/notary-renewal'],
     ['Our Classes', ''],
-    ['Study Guide', ''],
+    ['Study Guide', '/study-guide'],
     ['Need Help?', '/support'],
     // FAQ + Support
 

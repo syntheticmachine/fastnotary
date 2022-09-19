@@ -38,7 +38,7 @@ export default function Steps() {
     <section class="py-20 bg-white border-b border-gray-200">
       <Container>
         <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900">
               How do I become a <span className="underlined-three relative">notary public?</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -46,7 +46,7 @@ export default function Steps() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-16 mt-12">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-16 mt-12">
           {steps.map((step) => (
             <div key={step.title}>
               <div className="text-primary text-xl font-semibold mb-4 bg-yellow-400 inline-block pt-3 rounded-full w-16 h-16 text-center shadow border-4 border-white"><span className="mt-0.5 inline-block">{step.step}</span></div>

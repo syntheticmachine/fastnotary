@@ -27,7 +27,7 @@ export default function Home() {
         <Hero />
         <SecondaryFeatures />
         <Reviews />
-        <section className="bg-gray-100 border-t border-gray-200 py-20">
+        <section className="border-t border-gray-200 py-20">
           <Container>
             <div className="mx-auto max-w-2xl text-center">
             <h2

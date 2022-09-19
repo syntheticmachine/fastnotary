@@ -8,7 +8,7 @@ const stats = [
   { label: 'Raised', value: '$25M' },
 ]
 
-export default function ContentBox() {
+export default function RenewalContent() {
   return (
     <Container>
       <motion.div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8" initial={{ opacity: 0, y: '25px' }} animate={{ opacity: 1, y: '0' }} transition={{ duration: 0.5, delay: 0.1 }}>
@@ -17,15 +17,17 @@ export default function ContentBox() {
 
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-              Our mission is to help California notaries succeed.
+              It's really that easy to renew your notary license.
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">
-              If you are looking to Become a California notary, or you licensed is about to expire you are required to take a state-approved notary training class prior to taking your California Notary State Exam.  To find a California Notary Near Me (you) please use the calendar below to find the classes that fits your schedule.<br /><br />
+              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
+              pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
+              eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae.<br /><br />
 
               Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
               pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
-              eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
+              eros erat odio sed vitae.
               </p>
             </div>
           </div>
@@ -61,8 +63,8 @@ export default function ContentBox() {
             {/* Testimonial card*/}
             <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
               <img
-                className="absolute inset-0 h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+                className="absolute inset-0 h-full w-full object-cover grayscale"
+                src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
                 alt=""
               />
               <div className="absolute inset-0 bg-yellow-400 mix-blend-multiply" />
@@ -71,12 +73,12 @@ export default function ContentBox() {
                 <blockquote className="mt-8">
                   <div className="relative text-base font-medium text-white md:flex-grow md:pr-8">
                     <p className="relative">
-                      "This really was the fastest for me to become a California notary. It was so quick and easy, and the study guide they created made this whole process so much easier. Highly recommend!"
+                      "This course really saved me so much time, just take it and be on with your job in just 3 hours, it's really that easy! Thank you Fast Notary Course!"
                     </p>
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-lg font-semibold text-white">Morgan Hagen - California Notary</p>
+                    <p className="text-lg font-semibold text-white">Nicole Lewis - California Notary</p>
                   </footer>
                 </blockquote>
               </div>

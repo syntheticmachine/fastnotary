@@ -129,7 +129,7 @@ function Plan({
       </p>
       <p
         className={clsx(
-          'mt-3 text-sm',
+          'mt-3 text-base',
           featured ? 'text-gray-300' : 'text-gray-700'
         )}
       >
@@ -153,7 +153,7 @@ function Plan({
                   featured ? 'text-white' : 'text-yellow-400'
                 )}
               />
-              <span className="ml-4">{feature}</span>
+              <span className="ml-4 text-base">{feature}</span>
             </li>
           ))}
         </ul>

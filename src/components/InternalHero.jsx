@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container'
 import { motion, useInView, useMotionValue } from 'framer-motion'
+import { PriceCard } from './PriceCard'
 
 export function InternalHero(props) {
   return (
@@ -12,7 +13,7 @@ export function InternalHero(props) {
         >
           {props.title}
         </h1>
-        <p className="mt-6 leading-8 text-lg md:text-xl text-gray-600">
+        <p className="mt-8 md:leading-8 text-lg md:text-xl text-gray-600">
           {props.description}
         </p>
       </div>

@@ -6,9 +6,10 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { Container } from '@/components/Container'
 import { Reviews } from '@/components/Reviews'
-import ContentBox from '@/components/ContentBox'
+import RenewalContent from '@/components/RenewalContent'
 import Steps from '@/components/Steps'
 import { InternalHero } from '@/components/InternalHero'
+import RenewalSteps from '@/components/RenewalSteps'
 
 export default function NotaryRenewal() {
   return (
@@ -18,13 +19,13 @@ export default function NotaryRenewal() {
       </Head>
       <Header />
       <InternalHero 
-      title="Renew Your California Notary."
+      title="Renew Your Notary License."
       description="Need to renew your notary license? Take our quick and easy 3 hour renewal course." />
-      <ContentBox />
+      <RenewalContent />
       <div className="pb-16">
-      <Pricing />
+        <Pricing />
       </div>
-      <Steps />
+      <RenewalSteps />
       <Reviews />
       <CallToAction />
       <Footer />

@@ -257,7 +257,7 @@ export function Reviews() {
         <h2 className="opacity-0 animate-fade-in text-3xl md:text-4xl font-semibold text-slate-900 sm:text-center max-w-3xl mx-auto md:leading-tight tracking-tight">
           <span className="underlined">Over 50,000+</span> happy customers says it all.
         </h2>
-        <p className="animate-fade-in opacity-0 mt-6 text-xl text-slate-600 sm:text-center mb-12">
+        <p className="animate-fade-in opacity-0 mt-6 text-lg md:text-xl text-slate-600 sm:text-center md:mb-12">
           Thousands of people have doubled their net-worth in the last 30 days, become a California notary today.
         </p>
         <ReviewGrid />

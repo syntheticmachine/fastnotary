@@ -14,18 +14,15 @@ export default function BecomeANotary() {
   return (
     <>
       <Head>
-        <title>Fast Notary Course - Become A Clifornia Notary Online</title>
+        <title>Fast Notary Course - Become A California Notary Online</title>
       </Head>
       <Header />
       <InternalHero 
       title="Become a California Notary."
-      description="The first step to become a California Notary, 6-hour required training." />
-      <Container>
-      <motion.main initial={{ opacity: 0, y: '25px' }} animate={{ opacity: 1, y: '0' }} transition={{ duration: 0.5, delay: 0.1 }}></motion.main>
-      </Container>
+      description="The first step to become a California notary starts with our 6 hour required training." />
       <ContentBox />
       <div className="pb-16">
-      <Pricing />
+        <Pricing />
       </div>
       <Steps />
       <Reviews />

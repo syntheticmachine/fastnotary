@@ -34,7 +34,7 @@ export function Footer() {
               <NavLinks />
             </nav>
           </div>
-            <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
+            <div className="group relative -mx-4 flex items-center self-stretch p-4 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <Link href="/start" className="border-4 border-black rounded-full px-8 py-3 text-lg text-primary font-semibold bg-white hover:bg-yellow-400 duration-300 inline-flex">
                 Only $29 <span className="px-2 opacity-20">|</span> Start Your Course
               </Link>
@@ -42,7 +42,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-6 md:flex-row-reverse md:justify-center md:pt-6">
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+            &copy; Copyright {new Date().getFullYear()}. All rights reserved. <span className="text-gray-300 px-2">|</span> Created By <a className="text-gray-700 font-semibold" href="https://certsoft.net/">Certsoft</a>
           </p>
         </div>
       </Container>

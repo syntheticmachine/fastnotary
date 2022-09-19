@@ -87,6 +87,19 @@ h1, h2, h3, h4, h5, .text-primary {
   z-index: -1;
   background-size: contain;
 }
+.underlined-four::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  background-image: url(/_next/static/media/underline.7eace72b.svg);
+  height: 20px;
+  bottom: -16px;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: contain;
+  background-position: center;
+}
 .underlined-two::after {
   content: '';
   width: 160%;

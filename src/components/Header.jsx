@@ -125,7 +125,7 @@ export function Header() {
             </Popover>
           </div>
           <div className="flex gap-2 items-center">
-            <Link href="/login" className="hidden lg:block inline-flex justify-center rounded-full border-none bg-opacity-0 py-2 px-2 text-sm text-primary font-semibold">
+            <Link href="https://becomeacalifornianotary.com/school/?view=login" className="hidden lg:block inline-flex justify-center rounded-full border-none bg-opacity-0 py-2 px-2 text-sm text-primary font-semibold">
               Login
             </Link>
             <Link href="/start" className="hidden lg:block inline-flex justify-center rounded-full border py-2 px-5 text-sm border-2 border-black bg-white text-primary font-semibold hover:bg-yellow-400 duration-300">

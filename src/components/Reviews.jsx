@@ -252,13 +252,13 @@ function ReviewGrid() {
 
 export function Reviews() {
   return (
-    <section id="reviews" aria-labelledby="reviews-title" className="py-20 bg-gray-50">
+    <section id="reviews" aria-labelledby="reviews-title" className="py-20 bg-gray-50 text-center md:text-left">
       <Container>
-        <h2 className="opacity-0 animate-fade-in text-4xl font-bold text-slate-900 sm:text-center max-w-4xl mx-auto leading-tight tracking-tight">
-          <span className="underlined">Over 5,000+</span> happy customers says it all.
+        <h2 className="opacity-0 animate-fade-in text-3xl md:text-4xl font-semibold text-slate-900 sm:text-center max-w-3xl mx-auto md:leading-tight tracking-tight">
+          <span className="underlined">Over 50,000+</span> happy customers says it all.
         </h2>
-        <p className="animate-fade-in opacity-0 mt-6 text-lg text-slate-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+        <p className="animate-fade-in opacity-0 mt-6 text-xl text-slate-600 sm:text-center mb-12">
+          Thousands of people have doubled their net-worth in the last 30 days, become a California notary today.
         </p>
         <ReviewGrid />
       </Container>

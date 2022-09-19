@@ -30,7 +30,7 @@ export function Footer() {
             <div className="text-gray-900">
               <Image src={Logo} className="h-12 w-auto mb-6 block" />
             </div>
-            <nav className="mt-11 flex gap-8">
+            <nav className="mt-11 grid md:flex gap-8">
               <NavLinks />
             </nav>
           </div>

@@ -88,7 +88,7 @@ function Plan({
     >
       <h3
         className={clsx(
-          'flex items-center text-sm font-semibold pb-3 mb-2 relative underlined-three',
+          'flex items-center text-sm font-semibold pb-3 mb-2 relative',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
@@ -176,20 +176,9 @@ export function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-gray-100 py-20 mx-auto max-w-6xl"
+      className="mx-auto max-w-6xl"
     >
       <Container>
-        <div className="mx-auto max-w-2xl text-center">
-          <h2
-            id="pricing-title"
-            className="text-4xl font-semibold tracking-tight text-gray-900"
-          >
-            Flat pricing, no hidden fees.
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis hic fuga accusamus rem error beatae architecto pariatur suscipit velit eveniet.
-          </p>
-        </div>
 
         <div className=" flex justify-center">
           <div className="relative">

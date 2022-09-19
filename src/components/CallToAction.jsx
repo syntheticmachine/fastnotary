@@ -13,9 +13,9 @@ export function CallToAction() {
         <CircleBackground color="#fff" className="animate-spin-slower" />
       </div>
       <Container className="relative">
-        <div className="mx-auto max-w-md sm:text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-            Start now and become a notary today.
+        <div className="mx-auto max-w-md text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+            Start your path to becoming a notary today.
           </h2>
           <p className="mt-4 text-lg text-gray-700">
             It takes 30 seconds to sign up. Download the app and create an

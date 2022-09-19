@@ -6,14 +6,11 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
-    ['Home', ''],
-    ['Become A Notary', '/start'],
-    ['Notary Renewal', ''],
+    ['Become A Notary', '/become-a-notary'],
+    ['Notary Renewal', '/notary-renewal'],
     ['Our Classes', ''],
-    // ['FAQ', ''],
-    // ['Support', ''],
-    // ['7 Step Process', ''],
-    ['Need Help?', ''],
+    ['Study Guide', ''],
+    ['Need Help?', '/support'],
     // FAQ + Support
 
     // Home, Become A Notary, Renew Notary, Our Classes, Need Help?

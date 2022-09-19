@@ -1,28 +1,21 @@
 import Link from 'next/link'
-
 import { Container } from '@/components/Container'
+import { motion, useInView, useMotionValue } from 'framer-motion'
 
 const faqs = [
   [
     {
-      question: 'I starred my course, how do I log back in?',
+      question: 'I started my course, how do I log back in?',
       answer:
         'To log back into your course please click this link: https://becomeacalifornianotary.com/school/?view=login and you will be redirected to our login page. You can access your course with either your username (which was provided by us and looks like smith7827567165 ) or with the email address you signed up with.',
     },
     {
-      question: 'After completing our Online Notary Council Course, how do I register for and take the California State Exam?',
-      answer:
-        'You may go to the CPS HR Website (https://exam-registration.cpshr.us/notary/notary)  for exam dates and testing sites nearest you.  You may register for a notary public exam either online or by phone up to 15 business days prior to the exam.  To register by phone, please contact CPS at (916) 263-3520, M-F, 8 am – 5 pm. A confirmation scheduling letter will be sent to you via email or USPS, depending on how you registered. Also at the website, you may print the Notary Public Application (or have mailed to you if you registered by phone), which you will need to complete and bring with you to the testing site.',
-    },
-    {
-      question: 'When is the Next State Exam?',
+      question: 'When is the next state exam?',
       answer:
         'You can find the next State Exam in your area here: https://exam-registration.cpshr.us/notary/notary',
     },
-  ],
-  [
     {
-      question: 'Where are the State Exams?',
+      question: 'Where are the state exams?',
       answer:
         'State exams are all up and down California, to find the next one in your area click here',
     },
@@ -36,8 +29,6 @@ const faqs = [
       answer:
         'Once you have successfully completed our online state accepted notary course, you will be given a certificate of completion. You will need to print this certificate and take it with you to your Notary Public Exam.',
     },
-  ],
-  [
     {
       question: 'I have misplaced my completion certificate?',
       answer:
@@ -49,12 +40,7 @@ const faqs = [
         'You will need to bring a $40.00 separate check or money order, payable to the Secretary of State,  to the testing site for ALL new applicants. You will need to bring a $20.00 separate check or money order, payable to the Secretary of State, to the testing site for applicants that have previously taken the exam and failed.',
     },
     {
-      question: 'I though Everyone Had to Go Through NNA?',
-      answer:
-        'No, everyone does not need to go through NNA (Nation Notary Association) as both our courses are approved by the Secretary of State for the training courses.',
-    },
-    {
-      question: 'I though Everyone Had to Go Through NNA?',
+      question: 'I thought everyone had to go through NNA?',
       answer:
         'No, everyone does not need to go through NNA (Nation Notary Association) as both our courses are approved by the Secretary of State for the training courses.',
     },
@@ -63,50 +49,28 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <section
-      id="faqs"
-      aria-labelledby="faqs-title"
-      className="border-t border-gray-200 py-20 bg-white"
-    >
+    <motion.section className="py-16" initial={{ opacity: 0, y: '25px' }} animate={{ opacity: 1, y: '0' }} transition={{ duration: 0.5, delay: 0.1 }}>
       <Container>
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            id="faqs-title"
-            className="text-4xl font-semibold tracking-tight text-gray-900"
-          >
-            Frequently asked questions
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            If you have anything else you want to ask,{' '}
-            <Link
-              href="mailto:info@example.com"
-              className="text-gray-900 underline"
-            >
-              reach out to us
-            </Link>
-            .
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3"
-        >
           {faqs.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="space-y-10">
+            <ul role="list" className="mx-auto grid max-w-2xl md:max-w-none grid-cols-1 gap-6 lg:grid-cols-1 divide-y divide-gray-100">
                 {column.map((faq, faqIndex) => (
-                  <li key={faqIndex}>
-                    <h3 className="text-lg font-semibold leading-6 text-gray-900">
-                      {faq.question}
-                    </h3>
-                    <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
+                  <li key={faqIndex} className="px-8 py-8 md:py-10 md:py-12 bg-white rounded-lg shadow grid md:flex gap-6">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-yellow-400 md:mt-2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-semibold leading-8 text-gray-900 pr-6 border-b border-gray-100 mb-6 pb-6">
+                        {faq.question}
+                      </h3>
+                      <p className="text-base md:text-lg text-gray-500 leading-8 md:pr-16">{faq.answer}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
-            </li>
           ))}
-        </ul>
       </Container>
-    </section>
+    </motion.section>
   )
 }

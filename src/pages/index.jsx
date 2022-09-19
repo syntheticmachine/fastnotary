@@ -49,7 +49,9 @@ export default function Home() {
             </p>
           </div>
           </Container>
-          <Pricing />
+          <div id="pricing">
+            <Pricing />
+          </div>
         </section>
         <section className="bg-gray-50 border-t border-gray-100">
           <Faqs />

@@ -8,7 +8,7 @@ export function NavLinks() {
   return [
     ['Become A Notary', '/become-a-notary'],
     ['Notary Renewal', '/notary-renewal'],
-    ['Our Classes', ''],
+    ['Our Classes', '#pricing'],
     ['Study Guide', '/study-guide'],
     ['Need Help?', '/support'],
     // FAQ + Support

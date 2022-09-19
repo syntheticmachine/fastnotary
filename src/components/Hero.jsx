@@ -340,14 +340,14 @@ function AppDemo() {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden pt-16 pb-20 items-center">
+    <div className="overflow-hidden pt-8 md:pt-16 pb-20 items-center">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-2">
-          <motion.div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6 mt-20" 
+          <motion.div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6 md:mt-20 text-center md:text-left" 
           initial={{ opacity: 0, y: '25px' }}
           animate={{ opacity: 1, y: '0' }}
           transition={{ duration: 0.5, delay: 0.1 }}>
-            <h1 className="text-7xl font-semibold tracking-tight text-gray-900">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-gray-900">
             The <span className="underlined-two relative italic">fastest</span> way to become a notary.
             </h1>
             <p className="mt-6 text-lg text-gray-600 pr-24">
@@ -381,7 +381,7 @@ export function Hero() {
               </div>
             </div>
           </motion.div>
-          <div className="relative lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6 justify-center flex">
+          <div className="relative lg:col-span-5 lg:row-span-2 mt-12 lg:mt-0 xl:col-span-6 justify-center flex">
             <img src="https://images.unsplash.com/photo-1600275668999-f423597ec2a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" className="hero-image w-3/4 object-cover rounded-tl-full rounded-tr-full border-8 border-black" />
             <div className="absolute left-20 top-8">
               <Image className="w-12" src={Pop} />
@@ -389,7 +389,7 @@ export function Hero() {
             <div className="absolute left-12 -bottom-16">
               <Image className="w-48" src={Swirl} />
             </div>
-            <div className="absolute -right-12 bottom-20">
+            <div className="absolute right-0 left-0 md:left-auto md:-right-12 bottom-20">
               <motion.div className="message bg-white bg-opacity-80 rounded-lg py-4 pl-4 pr-7 shadow-md backdrop-blur-md"
               initial={{ opacity: 0, y: '25px' }}
               animate={{ opacity: 1, y: '0' }}

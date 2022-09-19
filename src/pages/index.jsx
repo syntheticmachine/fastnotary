@@ -43,7 +43,7 @@ export default function Home() {
           </Container>
           <Pricing />
         </section>
-        <section className="bg-white">
+        <section className="bg-gray-50 border-t border-gray-100">
           <Faqs />
         </section>
         <CallToAction />

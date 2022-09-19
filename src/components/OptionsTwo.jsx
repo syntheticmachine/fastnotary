@@ -27,7 +27,7 @@ export function OptionsTwo() {
       >
       <Container>
         <div className="mx-auto max-w-3xl sm:text-center">
-          <h2 className="text-5xl font-semibold tracking-tight text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 leading-tight">
             Great, would you like to add our study guide?
           </h2>
           <p className="mt-6 text-lg text-gray-600">

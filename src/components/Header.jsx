@@ -50,10 +50,10 @@ export function Header() {
   return (
     <header className="bg-white bg-opacity-70 sticky top-0 z-20 backdrop-blur-lg">
       <nav>
-        <Container className="relative z-50 flex py-8">
+        <Container className="relative z-50 flex py-4 md:py-8">
           <div className="relative z-10 flex items-center justify-between w-full gap-16">
             <Link href="/" aria-label="Home">
-              <Image src={MainLogo} alt="" className="h-14 w-auto" unoptimized />
+              <Image src={MainLogo} alt="" className="h-10 md:h-14 w-auto" unoptimized />
             </Link>
             <div className="hidden lg:flex lg:gap-7">
               <NavLinks />
@@ -96,25 +96,19 @@ export function Header() {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-6 shadow-2xl shadow-gray-900/20"
                         >
-                          <div className="space-y-4">
-                            <MobileNavLink href="#features">
-                              Features
-                            </MobileNavLink>
-                            <MobileNavLink href="#reviews">
-                              Reviews
-                            </MobileNavLink>
-                            <MobileNavLink href="#pricing">
-                              Pricing
-                            </MobileNavLink>
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                          <div className="mb-6 pb-6 text-center w-full border-b border-gray-200">
+                            <Image src={MainLogo} alt="" className="h-10 mx-auto" unoptimized />
+                          </div>
+                          <div className="space-y-4 grid">
+                           <NavLinks />
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">
                               Log in
                             </Button>
-                            <Button href="#">Download the app</Button>
+                            <Button href="/start">Start Your Course</Button>
                           </div>
                         </Popover.Panel>
                       </>

@@ -389,7 +389,7 @@ export function Hero() {
             <div className="absolute left-12 -bottom-16">
               <Image className="w-48" src={Swirl} />
             </div>
-            <div className="absolute right-0 left-0 md:left-auto md:-right-12 bottom-20">
+            <div className="absolute right-0 left-0 md:left-auto md:-right-12 bottom-10 md:bottom-20">
               <motion.div className="message bg-white bg-opacity-80 rounded-lg py-4 pl-4 pr-7 shadow-md backdrop-blur-md"
               initial={{ opacity: 0, y: '25px' }}
               animate={{ opacity: 1, y: '0' }}

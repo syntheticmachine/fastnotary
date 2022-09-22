@@ -53,7 +53,7 @@ export function Header() {
         <Container className="relative z-50 flex px-4 md:px-0 py-4 md:py-8">
           <div className="relative z-10 flex items-center justify-between w-full gap-6 md:gap-16">
             <Link href="/" aria-label="Home">
-              <Image src={MainLogo} alt="" className="h-10 md:h-14 w-auto" unoptimized />
+              <img src={MainLogo} alt="" className="h-10 md:h-14 w-auto" />
             </Link>
             <div className="hidden lg:flex lg:gap-7">
               <NavLinks />
@@ -106,7 +106,7 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="mb-6 pb-6 text-center w-full border-b border-gray-200">
-                            <Image src={MainLogo} alt="" className="h-12 mx-auto" unoptimized />
+                            <img src={MainLogo} alt="" className="h-12 mx-auto" />
                           </div>
                           <div className="space-y-4 grid">
                            <NavLinks />

@@ -15,20 +15,18 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-            Start your path to becoming a notary today.
+           Start your path to becoming a notary today.
           </h2>
           <p className="mt-4 text-lg text-gray-700">
-            It takes 30 seconds to sign up. Download the app and create an
-            account today and we’ll send you a tip guaranteed to double your
-            first investment.
+            The Secretary of State's Office appointed us as an <span className="italic font-semibold">Official Notary Training Vendor</span> for new and renewing notaries.
           </p>
           <div className="mt-8 justify-center">
            <Link href="/start" className="border-4 border-black rounded-full px-8 py-3 text-lg text-primary font-semibold bg-white hover:bg-yellow-400 duration-300 inline-flex">
-                Only $29 <span className="px-2 opacity-20">|</span> Start Your Course
+              Start Your Class, Today!
             </Link>
 
             <div className="block text-center mt-5">
-                <span className="text-sm text-gray-600 font-medium">Over 5,000+ Satisfied Customers</span>
+                <span className="text-sm text-gray-600 font-medium">Over 50,000 Satisfied Customers</span>
                 <div className="flex gap-1 text-white justify-center mt-2">
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">

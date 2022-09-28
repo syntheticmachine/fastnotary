@@ -255,10 +255,10 @@ export function Reviews() {
     <section id="reviews" aria-labelledby="reviews-title" className="py-20 bg-gray-50 text-center md:text-left">
       <Container>
         <h2 className="opacity-0 animate-fade-in text-3xl md:text-4xl font-semibold text-slate-900 sm:text-center max-w-3xl mx-auto md:leading-tight tracking-tight">
-          <span className="underlined">Over 50,000+</span> happy customers says it all.
+          <span className="underlined">Over 50,000</span> people have trusted us for their mandatory notary training needs.
         </h2>
         <p className="animate-fade-in opacity-0 mt-6 text-lg md:text-xl text-slate-600 sm:text-center md:mb-12">
-          Thousands of people have doubled their net-worth in the last 30 days, become a California notary today.
+          That’s right, over 50,000 people have trusted us for their mandatory notary training needs.
         </p>
         <ReviewGrid />
       </Container>

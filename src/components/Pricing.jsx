@@ -1,48 +1,47 @@
 import { useState } from 'react'
-import { RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logomark } from '@/components/Logo'
 import Link from 'next/link'
 
 const plans = [
   {
-    name: '6 Hour - Become A Notary',
+    name: 'Become A Notary Class',
     featured: false,
     price: { Monthly: 'Only $29', Annually: '$0' },
+    title: 'New Notary Required Training',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae ab aspernatur iure nisi modi dicta expedita sed esse corrupti aperiam inventore eveniet officiis ipsum voluptatum, maiores tempora incidunt molestiae! Nostrum.',
+      'This course covers all laws and procedures a notary public must follow. This is a mandatory class that every person seeking to become a notary public must take. Don’t worry we make the process as fast and easy as possible.',
     button: {
-      label: 'Start Your Course',
+      label: 'Start Your Class, Click Here!',
       href: '/register',
     },
     features: [
-      'Money-Back Guarantee To Pass State Exam',
+      'Guaranteed To Pass The Class',
       'Self Paced Course',
       'Instant Proof of Completion',
       'State Licensed #605172',
-      'Best For New Notaries'
+      'Required For New Notaries'
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: '3 Hour - Notary Renewal',
+    name: 'Notary Renewal Class',
     featured: false,
     price: { Monthly: 'Only $19', Annually: '$70' },
+    title: 'Required Training Every 4 Years',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae ab aspernatur iure nisi modi dicta expedita sed esse corrupti aperiam inventore eveniet officiis ipsum voluptatum, maiores tempora incidunt molestiae! Nostrum.',
+      "Our notary refresher class is valid for active notaries in the process of renewing their notary commission. The class is required every 4 years. It's a refresher of the laws you know and follow.",
     button: {
-      label: 'Start Your Course',
+      label: 'Start Your Class, Click Here!',
       href: '/register',
     },
     features: [
-      'Money-Back Guarantee To Pass State Exam',
+      'Guaranteed To Pass Our Class',
       'Self Paced Course',
       'Instant Proof of Completion',
-      'State Licensed #605172',
-      'Best For New Notaries'
+      'State Licensed #305254',
+      'Valid for currently commissioned notaries'
     ],
     logomarkClassName: 'fill-gray-500',
   },
@@ -78,6 +77,7 @@ function Plan({
   featured = false,
   activePeriod,
   logomarkClassName,
+  title
 }) {
   return (
     <section
@@ -88,7 +88,7 @@ function Plan({
     >
       <h3
         className={clsx(
-          'flex items-center text-sm font-semibold pb-3 mb-2 relative',
+          'flex items-center text-sm font-semibold pb-3 relative',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
@@ -96,13 +96,10 @@ function Plan({
       </h3>
       <p
         className={clsx(
-          'relative mt-2 mb-4 flex text-2xl tracking-tight italic text-primary',
+          'relative mb-4 flex text-xl tracking-tight text-primary',
           featured ? 'text-white' : 'text-gray-600'
         )}
       >
-        {price.Monthly === price.Annually ? (
-          price.Monthly
-        ) : (
           <>
             <span
               aria-hidden={activePeriod === 'Annually'}
@@ -112,7 +109,7 @@ function Plan({
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Monthly}
+              {title}
             </span>
             <span
               aria-hidden={activePeriod === 'Monthly'}
@@ -122,10 +119,9 @@ function Plan({
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Annually}
+              {title}
             </span>
           </>
-        )}
       </p>
       <p
         className={clsx(

@@ -5,39 +5,39 @@ import Link from 'next/link'
 
 const features = [
   {
-    name: '100% Online course',
+    name: '100% Online Class',
     description:
-      'We’ve made becoming a notary a cinch.  Our dedicated team has put together a step-by-step guide to ensure your success.',
+      'We’ve made notary training a cinch. Our online classes allow your to take the class at your paces. Go as fast as you with, or break it up over days/weeks.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Secure & Trusted',
+    name: 'State Approved Classes',
     description:
-      'Our Notary Training Classes is secure by military-grade encryption and has been licensed by the Secretary of States’ Office for Notary Public Training.',
+      'Our training classes are licensed by the California Secretary of States office. Licensed Numbers #30000 & #60000.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'State Approved Online Course',
+    name: 'Guaranteed To Pass',
     description:
-      'Our Notary Training Classes is secure by military-grade encryption and has been licensed by the Secretary of States’ Office for Notary Public Training.',
+      'Everyone will pass our class, we have made our training course ridiculously simple.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Become a notary public',
+    name: 'Great For New Notaries',
     description:
-      'Get started today and you too can be a California Notary Public. It’s Easy, Fun, and rewarding.',
+      'Get started today and you too can be a commissioned California Notary Public. It’s Easy, Fun, and rewarding $$$.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Our course at your fingertips',
+    name: 'Our Course At Your Fingertips',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Take our class on your mobile device, tablet or desktop computer. Our class is ready for you wherever you are!',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'We Track Your Progress',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Start and stop as much as you wish. We track your progress so you pick up where you left off.',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +196,11 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-3xl sm:text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900">
-            <span className="underlined-three relative">Quickly + easily</span> become a notary online.
+          <h2 className="text-xl lg:text-5xl font-semibold tracking-tight text-gray-900">
+           Your <span className="underlined-three relative italic">fastest way</span> to complete the mandatory notary training. 
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab numquam labore excepturi amet ullam nam corporis hic soluta, assumenda et dolor.
+          <p className="mt-4 text-lg lg:text-xl text-gray-600">
+            Whether you’re a season notary renewing your commission or start your notary commission journey, our classes have you covered!
           </p>
         </div>
         <ul
@@ -222,10 +222,10 @@ export function SecondaryFeatures() {
         </ul>
         <div className="mt-12 text-center">
           <Link href="/start" className="border-4 border-black rounded-full px-8 py-3 text-lg text-primary font-semibold bg-white hover:bg-yellow-400 duration-300 inline-flex">
-                Only $29 <span className="px-2 opacity-20">|</span> Start Your Course
+          Start Your Class, Today!
           </Link>
           <div className="block text-center mt-4">
-            <span className="text-sm text-gray-600 font-medium">Over 5,000+ Satisfied Customers</span>
+            <span className="text-sm text-gray-600 font-medium">Over 50,000 Satisfied Customers</span>
             <div className="flex gap-1 text-yellow-400 justify-center mt-2">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">

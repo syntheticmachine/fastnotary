@@ -21,11 +21,7 @@ export default function ContentBox() {
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">
-              If you are looking to Become a California notary, or you licensed is about to expire you are required to take a state-approved notary training class prior to taking your California Notary State Exam.  To find a California Notary Near Me (you) please use the calendar below to find the classes that fits your schedule.<br /><br />
-
-              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-              pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
-              eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
+              Becoming a California Notary public is a great responsibility, and to ensure you are properly prepared for this duty the California secretary of state’s office requires applicants to take a Training Class.  This class covers the laws and procedures that all Californai notaries must adhere to. Upon completion of our online class you will be presented with a proof of completion certificate you will turn over to the Secretary of State along with your application.
               </p>
             </div>
           </div>
@@ -71,12 +67,12 @@ export default function ContentBox() {
                 <blockquote className="mt-8">
                   <div className="relative text-base font-medium text-white md:flex-grow md:pr-8">
                     <p className="relative">
-                      "This really was the fastest for me to become a California notary. It was so quick and easy, and the study guide they created made this whole process so much easier. Highly recommend!"
+                      "This really was the fastest way for me to become a California notary. It was so quick and easy, and the study guide they created made this whole process so much easier. I highly recommend it!"
                     </p>
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-lg font-semibold text-white">Morgan Hagen - California Notary</p>
+                    <p className="text-lg font-semibold text-white">Morgan H. - California Notary</p>
                   </footer>
                 </blockquote>
               </div>

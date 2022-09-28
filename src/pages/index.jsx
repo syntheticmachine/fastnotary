@@ -37,15 +37,15 @@ export default function Home() {
         <Reviews />
         <section className="border-t border-gray-200 py-20">
           <Container>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-3xl text-center">
             <h2
               id="pricing-title"
               className="text-4xl font-semibold tracking-tight text-gray-900"
             >
-              Flat pricing, no hidden fees.
+              We Make Notary Training <span className="relative underlined-three">Quick &amp; Easy.</span>
             </h2>
-            <p className="mt-2 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis hic fuga accusamus rem error beatae architecto pariatur suscipit velit eveniet.
+            <p className="mt-4 text-lg lg:text-xl text-gray-600">
+              Get started and in a few hours you will be on your way to becoming a licensed notary or renewing your commission.
             </p>
           </div>
           </Container>
@@ -53,9 +53,9 @@ export default function Home() {
             <Pricing />
           </div>
         </section>
-        <section className="bg-gray-50 border-t border-gray-100">
+        {/* <section className="bg-gray-50 border-t border-gray-100">
           <Faqs />
-        </section>
+        </section> */}
         <CallToAction />
       </main>
       <Footer />

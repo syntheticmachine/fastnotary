@@ -18,8 +18,8 @@ export default function BecomeANotary() {
       </Head>
       <Header />
       <InternalHero 
-      title="Become a California Notary."
-      description="The first step to become a California notary starts with our 6 hour required training." />
+      title="Become a California notary."
+      description="Your first step to becoming a California notary starts with our fast, state licensed, required training class." />
       <ContentBox />
       <div className="pb-16">
         <Pricing />

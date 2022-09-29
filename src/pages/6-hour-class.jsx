@@ -5,7 +5,7 @@ import { StartBox } from '@/components/StartBox'
 import { Container } from '@/components/Container'
 import { StepsTitle } from '@/components/StepsTitle'
 
-export default function Start() {
+export default function SixHourClass() {
   return (
     <>
       <Head>
@@ -19,21 +19,21 @@ export default function Start() {
         <Container className="py-12">
 
         <StepsTitle 
-          title="Will your commission expire in next 90 Days?"
-          secondaryTitle="Or has it already expired?" />
+          title="Become A Notary"
+          secondaryTitle="6 Hour Online Training Class" />
 
          <div class="grid grid-cols-2 px-12">
             <StartBox
-              image="https://miro.medium.com/max/1190/0*ibTAfdeF9GlSKH9s"
-              title="Yes, it has."
-              description = "We Recommend you take the 6 Hour Online Class."
+              image="https://becomeacalifornianotary.com/wp-content/uploads/2020/01/california-notary-exam-study-guide.jpeg"
+              title="Recommended"
+              description = "6 Hour Class with our State Exam Study Guide."
               linkId = "666"
               linkName ="Okay, Let's Get Started"
             />
             <StartBox
               image="https://miro.medium.com/max/1400/1*XX2X4OtFiQTdYV3OtIlAIg.png"
-              title="No, it hasn't."
-              description = "Great, this is the course for you."
+              title="Course Only"
+              description = "Our six hour notary cousre without help."
               linkId = "666"
               linkName ="Select Our Starter Course"
             />

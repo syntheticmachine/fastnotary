@@ -1,12 +1,6 @@
 import { motion } from "framer-motion"
 import { Container } from "./Container"
 
-const stats = [
-  { label: 'Founded', value: '2021' },
-  { label: 'Employees', value: '5' },
-  { label: 'Beta Users', value: '521' },
-  { label: 'Raised', value: '$25M' },
-]
 
 export default function ContentBox() {
   return (
@@ -16,7 +10,7 @@ export default function ContentBox() {
         <div className="relative mx-auto max-w-md sm:max-w-3xl order-2 md:order-1">
 
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mt-6">
               Our mission is to help California notaries succeed.
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">

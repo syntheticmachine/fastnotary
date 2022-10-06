@@ -5,7 +5,7 @@ import { StartBox } from '@/components/StartBox'
 import { Container } from '@/components/Container'
 import { StepsTitle } from '@/components/StepsTitle'
 
-export default function GetStarted() {
+export default function ThreeHourCourse() {
   return (
     <>
       <Head>
@@ -19,23 +19,24 @@ export default function GetStarted() {
         <Container className="py-12">
 
         <StepsTitle 
-          title="Are you a new notary or renewing your commission?" 
-          eyebrow="Tell us a little aout yourself." />
+          title="Will Your Commission Expire in next 90 days? Or has it already expired?"
+          description="3 Hour Online Training"
+          eyebrow="Renew Your Notary Comission." />
 
          <div class="grid grid-cols-2 px-12">
             <StartBox
-              image="https://miro.medium.com/max/1190/0*ibTAfdeF9GlSKH9s"
-              title="I'm a brand new notary."
-              description = "You'll need to take our 6 hour starter course."
+              image="https://becomeacalifornianotary.com/wp-content/uploads/2020/01/california-notary-exam-study-guide.jpeg"
+              title="Yes, it has."
+              description = "We Recommend you take the 6 Hour Online Class."
               linkId = "/become-a-notary-class"
-              linkName ="View New Notary Packages"
+              linkName = "View 6-Hour Class"
             />
             <StartBox
               image="https://miro.medium.com/max/1400/1*XX2X4OtFiQTdYV3OtIlAIg.png"
-              title="I'm renewing my comission."
-              description = "Great! You can take our 3 hour renewal course."
-              linkId = "/notary-renewal-class"
-              linkName ="View Renewal Packages"
+              title="No, it hasn't."
+              description = "Great, this is the course for you"
+              linkId = "/notary-renewal-class-selection"
+              linkName ="Get Started Now"
             />
           </div>
 
@@ -43,4 +44,4 @@ export default function GetStarted() {
       </motion.main>
     </>
 )                                     
-} 
+}

@@ -5,7 +5,7 @@ import { StartBox } from '@/components/StartBox'
 import { Container } from '@/components/Container'
 import { StepsTitle } from '@/components/StepsTitle'
 
-export default function GetStarted() {
+export default function GetStudyGuideTwo() {
   return (
     <>
       <Head>
@@ -19,23 +19,24 @@ export default function GetStarted() {
         <Container className="py-12">
 
         <StepsTitle 
-          title="Are you a new notary or renewing your commission?" 
-          eyebrow="Tell us a little aout yourself." />
+          title="Does your commission expire in next 90 days, or has it expired?" 
+          eyebrow="Purchase State Exam Study Guide." />
 
          <div class="grid grid-cols-2 px-12">
             <StartBox
               image="https://miro.medium.com/max/1190/0*ibTAfdeF9GlSKH9s"
-              title="I'm a brand new notary."
-              description = "You'll need to take our 6 hour starter course."
-              linkId = "/become-a-notary-class"
-              linkName ="View New Notary Packages"
+              title="No, it hasn't"
+              description = "Okay great, just checking."
+              linkId = "/school/?view=signup&registration=discount&validation_code=9"
+              linkName ="Purchase Study Guide"
             />
             <StartBox
               image="https://miro.medium.com/max/1400/1*XX2X4OtFiQTdYV3OtIlAIg.png"
-              title="I'm renewing my comission."
-              description = "Great! You can take our 3 hour renewal course."
-              linkId = "/notary-renewal-class"
-              linkName ="View Renewal Packages"
+              title="Yes, it has."
+              description = "6 Hour Online Class with State Exam Study Guide"
+              linkId = "/school/?view=signup&registration=discount&validation_code=5"
+              linkName ="Get Started now"
+              recommended
             />
           </div>
 

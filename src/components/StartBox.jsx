@@ -16,7 +16,7 @@ export function StartBox({ className, ...props }) {
                 <div>
                   {props.recommended > 0 &&
                     <span className="text-white inline-block mb-4 rounded-full px-4 py-2 text-xs bg-gray-900 text-primary">
-                      Recommended Package
+                      Our Recommended Package
                     </span>
                   }
                   <h3 className="font-semibold text-primary text-3xl leading-tight mb-4">{props.title}</h3>

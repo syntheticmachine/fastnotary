@@ -50,10 +50,10 @@ export function Header() {
   return (
     <header className="bg-white bg-opacity-70 sticky top-0 z-20 backdrop-blur-lg">
       <nav>
-        <Container className="relative z-50 flex px-4 md:px-0 py-4 md:py-8">
-          <div className="relative z-10 flex items-center justify-between w-full gap-6 md:gap-16">
+        <Container className="relative z-50 flex px-4 py-4 lg:py-8">
+          <div className="relative z-10 flex items-center justify-between w-full gap-6 lg:gap-16 lg:px-4 md:px-6">
             <Link href="/" aria-label="Home">
-              <Image src={MainLogo} alt="" className="h-10 md:h-14 w-auto" />
+              <Image src={MainLogo} alt="" className="h-10 lg:h-14 w-auto" />
             </Link>
             <div className="hidden lg:flex lg:gap-7">
               <NavLinks />
@@ -61,7 +61,7 @@ export function Header() {
 
             <div className="flex items-center gap-6 lg:hidden">
 
-            <div className="md:hidden w-32 ml-auto text-right">
+            <div className="lg:hidden w-32 ml-auto text-right">
               <Link href="/start" className="lg:block inline-flex justify-center rounded-full border py-2 px-4 text-sm border-2 border-black bg-white text-primary font-semibold hover:bg-yellow-400 duration-300">
                 Sign Up
               </Link>
@@ -125,7 +125,7 @@ export function Header() {
               )}
             </Popover>
           </div>
-          <div className="hidden md:flex gap-2 items-center">
+          <div className="hidden lg:flex gap-2 items-center">
             <a href="/school/?view=login" className="hidden lg:block inline-flex justify-center rounded-full border-none bg-opacity-0 py-2 px-2 text-sm text-primary font-semibold">
               Login
             </a>

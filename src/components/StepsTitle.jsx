@@ -4,7 +4,7 @@ import { PriceCard } from './PriceCard'
 
 export function StepsTitle(props) {
   return (
-    <motion.section className="pt-16 md:pt-20 pb-8" initial={{ opacity: 0, y: '25px' }} animate={{ opacity: 1, y: '0' }} transition={{ duration: 0.5, delay: 0.1 }}>
+    <motion.section className="pt-4 md:pt-20 pb-8" initial={{ opacity: 0, y: '25px' }} animate={{ opacity: 1, y: '0' }} transition={{ duration: 0.5, delay: 0.1 }}>
       <Container>
         <div className="mx-auto max-w-4xl text-center text-gray-900">
         <span className="font-semibold mb-4 block bg-white border-2 border-gray-900 text-base text-primary rounded-full text-gray-900 py-1.5 px-5 inline-block">
@@ -12,7 +12,7 @@ export function StepsTitle(props) {
         </span>
         <h1
           id="pricing-title"
-          className="text-5xl font-semibold tracking-tight text-gray-900 relative leading-tight"
+          className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 relative leading-tight"
         >
           {props.title}
         </h1>

@@ -21,6 +21,7 @@ export default function ThreeHourSelection() {
 
         <StepsTitle 
           title="Notary Renewal Online Class"
+          title={["California state ", <span>required</span>, " notary renewal online class."]}
           description="3 Hour Online Training" 
           eyebrow="Renew Your California Notary." />
 

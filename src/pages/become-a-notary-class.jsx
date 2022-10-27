@@ -20,25 +20,25 @@ export default function SixHourClass() {
         <Container className="py-12">
 
         <StepsTitle 
-          title="Become A Notary Online Class"
+          title={["Become a ", <span>California</span>, " notary required online course."]}
           description="6 Hour Online Training" 
-          eyebrow="Your first step to becoming a notary." />
+          eyebrow="Your first step to becoming a California notary" />
 
          <div class="grid md:grid-cols-2 md:px-12">
             <StartBox
               image="https://becomeacalifornianotary.com/wp-content/uploads/2020/01/california-notary-exam-study-guide.jpeg"
-              title="6 Hour Class with State Exam Study Guide."
-              description = "Our six hour class with our state exam study guide."
+              title="6 Hour Class + Our State Exam Study Guide."
+              description = "Our six hour class. Plus+ our state exam study guide."
               linkId = "/school/?view=signup&registration=discount&validation_code=5"
-              linkName = "Okay, Let's Get Started"
+              linkName = "Okay, let's get started"
               recommended
             />
             <StartBox
               image="https://miro.medium.com/max/1400/1*XX2X4OtFiQTdYV3OtIlAIg.png"
               title="6 Hour Course Only."
-              description = "Our six hour notary course without help."
+              description = "Our six hour state approved notary course."
               linkId = "/school/?view=signup&registration=discount&validation_code=6"
-              linkName ="Select Our Starter Course"
+              linkName ="Select our starter course"
             />
           </div>
 

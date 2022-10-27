@@ -21,6 +21,7 @@ export default function ThreeHourCourse() {
 
         <StepsTitle 
           title="Will Your Commission Expire in next 90 days? Or has it already expired?"
+          title={["will your comission ", <span>expire</span>, " in the next ", <span>90 days</span>, "? Or has it expired?"]}
           description="3 Hour Online Training"
           eyebrow="Renew Your Notary Comission." />
 

@@ -19,24 +19,25 @@ export default function GetStarted() {
       >
         <Container className="py-12">
 
-        <StepsTitle 
-          title="Are you a new notary or renewing your commission?" 
-          eyebrow="Tell us a little aout yourself." />
+         <StepsTitle 
+          title={["Are you a ", <span>new</span>, " notary, or ", <span>renewing</span>, " your comission?"]}
+          description="California Approved Notary Class" 
+          eyebrow="Your first step to becoming a California notary" />
 
          <div class="grid md:grid-cols-2 md:px-12">
             <StartBox
               image="https://miro.medium.com/max/1190/0*ibTAfdeF9GlSKH9s"
               title="I'm a brand new notary."
-              description = "You'll need to take our 6 hour starter course."
+              description = "California requires you to take our 6 hour class, this is the option for you."
               linkId = "/become-a-notary-class"
-              linkName ="View New Notary Packages"
+              linkName ="Select Option"
             />
             <StartBox
               image="https://miro.medium.com/max/1400/1*XX2X4OtFiQTdYV3OtIlAIg.png"
               title="I'm renewing my comission."
               description = "Great! You can take our 3 hour renewal course."
               linkId = "/notary-renewal-class"
-              linkName ="View Renewal Packages"
+              linkName ="Select Option"
             />
           </div>
 

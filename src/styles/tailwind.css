@@ -15,28 +15,6 @@
   src: url('/fonts/Inter-italic.var.woff2') format('woff2');
 }
 
-/* 
-@font-face {
-  font-family: 'scripty';
-  font-weight: 100 900;
-  font-display: block;
-  font-named-instance: 'Regular';
-  src: url('/fonts/Fraunces-roman.var.woff2') format('woff2');
-  src: url('/fonts/Fraunces-roman.var.woff') format('woff');
-}
-@font-face {
-  font-family: 'scripty_itc';
-  font-weight: 100 900;
-  font-display: block;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/Fraunces-italic.var.woff2') format('woff2');
-  src: url('/fonts/Fraunces-italic.var.woff') format('woff');
-}
-*/ 
-
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,6 +29,43 @@ html, body {
   background-color: #fffcfa;
 }
 
+.text-main {
+  color: #f3797b;
+}
+.bg-primary {
+  background: #f3797b;
+}
+
+.text-red {
+  color: #ee3223;
+}
+
+.recommended {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-20px);
+  border: 4px solid white;
+  right: 0;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.step-title {
+  line-height: 1.2 !important;
+}
+.step-title span {
+  color: #f3797b;
+  font-style: italic;
+}
+
+/* 
+
+  BG: color: #ffe3d4;
+  Primary: color: #f3797b;
+  Secondary: color: #ffee00;
+
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Inter:wght@200;300;400;500;600;700&display=swap');
 

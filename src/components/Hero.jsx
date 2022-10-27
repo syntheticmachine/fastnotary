@@ -51,7 +51,7 @@ export function Hero() {
             </div>
           </motion.div>
           <div className="relative lg:col-span-5 lg:row-span-2 mt-12 lg:mt-0 xl:col-span-6 justify-center flex">
-            <img width="425px" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnotary-placeholder.0bd053b5.png&w=3840&q=75" alt="" className="hero-image w-3/4 object-cover rounded-tl-full rounded-tr-full border-8 border-black" />
+            <img src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnotary-placeholder.0bd053b5.png&w=3840&q=75" alt="" className="hero-image w-3/4 object-cover rounded-tl-full rounded-tr-full border-8 border-black" />
             <div className="absolute left-20 top-8">
               <Image className="w-12" src={Pop} />
             </div>

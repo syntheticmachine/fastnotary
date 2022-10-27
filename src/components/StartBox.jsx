@@ -4,7 +4,7 @@ export function StartBox({ className, ...props }) {
 {
   return (
       <>
-        <div className="p-12 rounded-xl bg-white w-auto m-4 border boder-gray-200 transition-all hover:shadow-lg duration-500 relative">
+        <div className="p-10 py-14 md:p-14 rounded-xl mb-4 bg-white w-auto md:m-4 border boder-gray-200 transition-all hover:shadow-lg duration-500 relative">
           <div class="grid h-full items-center justify-center text-center">
             <div className="grid gap-8 grid-cols">
               <div className="col-span- hidden">
@@ -12,14 +12,14 @@ export function StartBox({ className, ...props }) {
                   <img className="object-contain w-64 rounded-lg object-top" src={props.image} />
                 </div>
               </div>
-              <div className=" gap-4 col-span-">
+              <div className="gap-4">
                 <div>
                   {props.recommended > 0 &&
                     <span className="text-white inline-block rounded-full px-6 py-2 text-base text-gray-900 bg-yellow-400 shadow-sm text-primary recommended">
                       Our Recommended Package
                     </span>
                   }
-                  <h3 className="font-semibold text-primary text-3xl leading-tight mb-4">{props.title}</h3>
+                  <h3 className="font-semibold text-primary text-2xl md:text-3xl leading-tight mb-4">{props.title}</h3>
                   <p className="text-gray-600 mt-2 mb-5 text-base leading-6">{props.description}</p>
                 </div>
                 <div>

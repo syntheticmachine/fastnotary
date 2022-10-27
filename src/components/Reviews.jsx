@@ -114,7 +114,7 @@ function StarRating({ rating }) {
           key={index}
           className={clsx(
             'h-5 w-5',
-            rating > index ? 'fill-yellow-300' : 'fill-gray-300'
+            rating > index ? 'fill-main' : 'fill-gray-300'
           )}
         />
       ))}

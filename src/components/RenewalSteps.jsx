@@ -34,7 +34,7 @@ export default function RenewalSteps() {
           <div className="grid md:grid-cols-3 gap-6 md:gap-16 mt-12 md:mt-20">
           {steps.map((step) => (
             <div key={step.title}>
-              <div className="text-primary text-xl font-semibold mb-4 bg-yellow-400 inline-block pt-3 rounded-full w-16 h-16 text-center shadow border-4 border-white"><span className="mt-0.5 inline-block">{step.step}</span></div>
+              <div className="text-primary text-xl font-semibold mb-4 bg-primary text-white inline-block pt-3 rounded-full w-16 h-16 text-center shadow border-4 border-white"><span className="mt-0.5 inline-block">{step.step}</span></div>
               <h3 className="text-2xl font-semibold tracking-tight">{step.title}</h3>
               <p className="mt-4 text-lg text-gray-600">{step.description}</p>
             </div>

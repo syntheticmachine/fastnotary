@@ -15,7 +15,7 @@ export function StartBox({ className, ...props }) {
               <div className=" gap-4 col-span-">
                 <div>
                   {props.recommended > 0 &&
-                    <span className="text-white inline-block rounded-full px-6 py-2 text-sm text-gray-900 bg-yellow-400 shadow-sm text-primary recommended">
+                    <span className="text-white inline-block rounded-full px-6 py-2 text-base text-gray-900 bg-yellow-400 shadow-sm text-primary recommended">
                       Our Recommended Package
                     </span>
                   }
